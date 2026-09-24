@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sagar-growth-systems.onrender.com/typing/sitemap.xml

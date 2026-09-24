@@ -1,119 +1,111 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Typing Speed</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sagar Typing Test | Free Typing Speed & Accuracy Test</title>
+  <meta name="description" content="Sagar Typing Test is a modern free typing speed and accuracy tester with a live keyboard, WPM tracking, practice modes, statistics, and responsive glassmorphism UI.">
+  <meta name="keywords" content="typing speed test, typing test, WPM test, typing accuracy test, keyboard test, free typing practice, Sagar Kothakula">
+  <meta name="author" content="Sagar Kothakula">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0b63f6">
+  <link rel="canonical" href="https://sagar-growth-systems.onrender.com/typing/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sagar Typing Test | Free Typing Speed Test">
+  <meta property="og:description" content="Test and improve typing speed, accuracy, consistency, and keyboard skills with Sagar's modern typing platform.">
+  <meta property="og:url" content="https://sagar-growth-systems.onrender.com/typing/">
+  <meta property="og:site_name" content="Sagar Typing Test">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sagar Typing Test">
+  <meta name="twitter:description" content="Free online typing speed, accuracy, and keyboard practice tool by Sagar Kothakula.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebApplication",
+    "name":"Sagar Typing Test",
+    "applicationCategory":"EducationalApplication",
+    "operatingSystem":"Any",
+    "description":"Free typing speed, accuracy, keyboard and practice application created by Sagar Kothakula.",
+    "author":{
+      "@type":"Person",
+      "name":"Sagar Kothakula",
+      "url":"https://sagar-growth-systems.onrender.com/"
+    },
+    "url":"https://sagar-growth-systems.onrender.com/typing/"
+  }
+  </script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Home</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" href="#">About</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="#faq">FAQ</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" target="_blank" href="https://sagar-psycho.github.io/sagar.ai/">Sagar AI</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" target="_blank" href="https://sagar-psycho.github.io/portfolio.responsive/">Portfolio</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+
+  <div id="landingPage" class="page landing-page">
+    <header class="site-nav glass">
+      <a class="brand" href="#landingPage" aria-label="Sagar Typing Test home"><span class="brand-dot"></span><span>Sagar<span class="accent">Typing</span></span></a>
+      <nav aria-label="Primary navigation">
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="nav-cta" href="#app" data-open-app>Start Test</a>
+    </header>
+
+    <main>
+      <section class="hero section-wrap">
+        <div class="hero-copy">
+          <p class="eyebrow">FREE • FAST • RESPONSIVE</p>
+          <h1>Build faster fingers.<br><span class="gradient-text">Measure every keystroke.</span></h1>
+          <p class="hero-text">A modern typing speed and accuracy platform created by <a href="https://sagar-growth-systems.onrender.com/" target="_blank" rel="noopener">Sagar Kothakula</a>. Practice, test, analyse, and improve with a live keyboard that reacts to your typing.</p>
+          <div class="hero-actions"><a class="primary-btn" href="#app" data-open-app>Start Typing <span>→</span></a><a class="secondary-btn" href="https://sagar-growth-systems.onrender.com/" target="_blank" rel="noopener">View Portfolio</a></div>
+          <div class="trust-row"><span>⚡ Live WPM</span><span>⌨️ Keyboard feedback</span><span>📈 Personal stats</span></div>
         </div>
-    </nav>
-    <div class="container">
-        <div class="left-section">
-            <h1>Typing Speed Test</h1>
-            <select id="level" class="form-select form-select-sm" aria-label="Small select example">
-                <option selected>Select Level</option>
-                <option value="beginner">Beginner</option>
-                <option value="intermediate">Intermediate</option>
-                <option value="advanced">Advanced</option>
-            </select><br>
-            <p id="level-alert" style="color: red; display: none;">Please select a level before starting.</p>
-            <p id="timer">Time: 0.00 seconds</p>
-            <p id="text"></p>
-            <textarea id="input" placeholder="Start typing..." disabled></textarea><br><br>
-            <div class="buttt">
-                <button id="start" class="btn btn-success">Start</button>
-                <button id="submit" class="btn btn-secondary" disabled>Submit</button>
-                <button id="restart" style="display: none;" class="btn btn-primary">Restart</button>
-            </div>
-            <p id="result"></p>
-            <button id="toggleSound" class="btn btn-warning">Toggle Sound</button>
+        <div class="hero-card glass">
+          <div class="mini-top"><span>LIVE PREVIEW</span><span class="live-dot">● LIVE</span></div>
+          <div class="mini-stats"><div><small>WPM</small><strong>87</strong></div><div><small>Accuracy</small><strong>98.4%</strong></div><div><small>Errors</small><strong>2</strong></div></div>
+          <div class="mini-typing"><span class="typed">The quick brown fox jumps</span><span class="future"> over the lazy dog.</span><span class="caret"></span></div>
+          <div class="mini-keyboard"><div><kbd>Q</kbd><kbd>W</kbd><kbd class="key-active">E</kbd><kbd>R</kbd><kbd>T</kbd><kbd>Y</kbd><kbd>U</kbd><kbd>I</kbd><kbd>O</kbd><kbd>P</kbd></div><div><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd><kbd>F</kbd><kbd>G</kbd><kbd>H</kbd><kbd>J</kbd><kbd>K</kbd><kbd>L</kbd></div><div><kbd>Z</kbd><kbd>X</kbd><kbd>C</kbd><kbd>V</kbd><kbd>B</kbd><kbd>N</kbd><kbd>M</kbd></div></div>
         </div>
-        <div class="right-section">
-            <div class="clear">
-                <h2>Previous Records</h2>
-                <button id="clearHistory" class="btn btn-danger right">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
-                        <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"/>
-                    </svg>
-                </button>
-                <p id="msg-delete" style="color: red; display: none;">Please start typing and submit it before you can delete.</p>
-            </div>
-            <table id="recordsTable" class="table table-success table-striped-columns">
-                <thead>
-                    <tr>
-                        <th>Level</th>
-                        <th>Time (seconds)</th>
-                        <th>Words per Minute</th>
-                        <th>Accuracy</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Records will be added here -->
-                </tbody>
-            </table>
-        </div>
-    </div>
-    <div id="faq">
-        <h2>Frequently Asked Questions</h2>
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        1. What is a typing speed test?
-                    </button>
-                </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">A typing speed test measures how fast and accurately you can type a given piece of text.</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        2. How is typing speed measured?
-                    </button>
-                </h2>
-                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Typing speed is typically measured in words per minute (WPM), which is the number of words typed correctly in one minute.</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                        3. Why is accuracy important in typing?
-                    </button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Accuracy is important because typing quickly is not useful if many errors are made. High accuracy ensures that the typed text is correct and reliable.</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <audio id="clickSound" src="click.mp3"></audio>
-    <audio id="typingSound" src="typing.mp3"></audio>
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      </section>
+
+      <section id="features" class="section-wrap feature-section">
+        <div class="section-heading"><p class="eyebrow">WHAT YOU GET</p><h2>More than a stopwatch with a textbox.</h2></div>
+        <div class="feature-grid"><article class="glass feature-card"><span>⌨️</span><h3>Live Keyboard Test</h3><p>Keys light up as you press them, including correct, incorrect, and currently required keys.</p></article><article class="glass feature-card"><span>🎯</span><h3>Real-time Accuracy</h3><p>Every character is checked instantly while mistakes remain visible instead of ending the test.</p></article><article class="glass feature-card"><span>📊</span><h3>Typing Analytics</h3><p>Track WPM, raw WPM, net WPM, accuracy, errors, consistency, and personal bests.</p></article><article class="glass feature-card"><span>🔥</span><h3>Practice Modes</h3><p>Use beginner, intermediate, advanced, timed, custom, and focused practice experiences.</p></article></div>
+      </section>
+
+      <section id="about" class="section-wrap about-section">
+        <div class="about-card glass"><div><p class="eyebrow">ABOUT THE CREATOR</p><h2>Created by Sagar Kothakula</h2><p>Sagar is a Digital Marketing and technology professional focused on SEO, web development, analytics, AI-powered marketing systems, and practical digital products.</p><p>This typing platform is designed as a polished example of the same approach: useful UX, measurable performance, clean technical structure, and a little less suffering per keystroke.</p></div><div class="creator-links"><a href="https://www.linkedin.com/in/sagar-kothakula-1175153aa/" target="_blank" rel="noopener">LinkedIn ↗</a><a href="https://github.com/kothakula-sagar" target="_blank" rel="noopener">GitHub ↗</a><a href="https://www.instagram.com/psycho__sagar_/" target="_blank" rel="noopener">Instagram ↗</a><a href="https://sagar-growth-systems.onrender.com/" target="_blank" rel="noopener">Portfolio ↗</a></div></div>
+      </section>
+
+      <section id="faq" class="section-wrap faq-section">
+        <div class="section-heading"><p class="eyebrow">FAQ</p><h2>Typing test questions, answered.</h2></div>
+        <div class="faq-grid"><details class="glass"><summary>What is WPM?</summary><p>WPM means words per minute. This app uses the common five-characters-per-word convention for speed calculations.</p></details><details class="glass"><summary>Does one mistake stop the test?</summary><p>No. Incorrect characters are highlighted and counted, while you can continue typing and finish the session.</p></details><details class="glass"><summary>Does it save my results?</summary><p>Results can be stored locally in your browser for personal history and statistics. No account is required for the basic experience.</p></details></div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-wrap"><div>© <span data-year></span> Sagar Kothakula</div><div class="footer-links"><a href="https://sagar-growth-systems.onrender.com/" target="_blank" rel="noopener">Portfolio</a><a href="https://github.com/kothakula-sagar" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/sagar-kothakula-1175153aa/" target="_blank" rel="noopener">LinkedIn</a></div></footer>
+  </div>
+
+  <div id="app" class="page app-page hidden">
+    <header class="app-nav glass"><a class="brand" href="#landingPage"><span class="brand-dot"></span>Sagar<span class="accent">Typing</span></a><div class="app-nav-actions"><a class="nav-link" href="#landingPage">Landing</a><a class="nav-link" href="#app">Test</a><a class="nav-link" href="#stats">Stats</a><button id="themeToggle" class="icon-btn" aria-label="Toggle theme">◐</button></div></header>
+
+    <main class="app-shell section-wrap">
+      <section class="app-head"><div><p class="eyebrow">TYPING LAB</p><h1>Typing Speed Test</h1><p>Type the highlighted passage. The keyboard below will react to every key.</p></div><div class="control-row"><label>Level<select id="level"><option value="beginner">Beginner</option><option value="intermediate">Intermediate</option><option value="advanced">Advanced</option><option value="expert">Expert</option></select></label><label>Time<select id="duration"><option value="0">Passage</option><option value="30">30 sec</option><option value="60" selected>60 sec</option><option value="120">120 sec</option></select></label></div></section>
+
+      <section class="live-stats"><div class="glass stat-card"><span>WPM</span><strong id="wpm">0</strong></div><div class="glass stat-card"><span>Accuracy</span><strong id="accuracy">100%</strong></div><div class="glass stat-card"><span>Errors</span><strong id="errors">0</strong></div><div class="glass stat-card"><span>Time</span><strong id="timer">00:00</strong></div></section>
+
+      <section class="typing-card glass"><div class="typing-toolbar"><div id="status" class="status-pill">Ready to start</div><div class="toolbar-actions"><button id="soundToggle" class="ghost-btn">🔊 Sound On</button><button id="restart" class="ghost-btn">↻ Restart</button></div></div><div id="text" class="typing-text" aria-label="Typing passage"></div><div class="input-hint" id="inputHint">Click “Start Test”, then type anywhere on this page.</div><textarea id="input" class="typing-input" aria-label="Type the passage here" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" disabled></textarea><div class="start-row"><button id="start" class="primary-btn">Start Test <span>→</span></button><button id="submit" class="secondary-btn" disabled>Finish Test</button></div></section>
+
+      <section class="keyboard-panel glass"><div class="keyboard-head"><div><h2>Test Keyboard</h2><p>Correct keys turn <span class="green-text">green</span>; mistakes turn red. The next required key gets a blue glow.</p></div><div class="keyboard-legend"><span><i class="dot green"></i>Correct</span><span><i class="dot red"></i>Wrong</span><span><i class="dot blue"></i>Next</span></div></div><div id="keyboard" class="keyboard" aria-label="Visual keyboard"></div></section>
+
+      <section id="stats" class="dashboard-grid"><article class="glass panel"><div class="panel-title"><h2>Personal Best</h2><span>Local</span></div><div class="best-grid"><div><small>Best WPM</small><strong id="bestWpm">0</strong></div><div><small>Best Accuracy</small><strong id="bestAccuracy">0%</strong></div><div><small>Tests</small><strong id="testsDone">0</strong></div><div><small>Practice Time</small><strong id="practiceTime">0m</strong></div></div></article><article class="glass panel"><div class="panel-title"><h2>Recent Results</h2><button id="clearHistory" class="danger-link">Clear</button></div><div class="table-wrap"><table><thead><tr><th>Level</th><th>WPM</th><th>Accuracy</th><th>Time</th></tr></thead><tbody id="records"></tbody></table></div></article></section>
+
+      <section class="creator-strip glass"><div><span class="eyebrow">DESIGNED & BUILT BY</span><h2>Sagar Kothakula</h2><p>Digital Marketing • SEO • Web Development • AI Marketing Systems</p></div><div class="creator-links"><a href="https://www.linkedin.com/in/sagar-kothakula-1175153aa/" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/kothakula-sagar" target="_blank" rel="noopener">GitHub</a><a href="https://www.instagram.com/psycho__sagar_/" target="_blank" rel="noopener">Instagram</a><a href="https://sagar-growth-systems.onrender.com/" target="_blank" rel="noopener">Portfolio</a></div></section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
